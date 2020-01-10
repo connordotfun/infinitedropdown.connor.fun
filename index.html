@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Our Funky HTML Page</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <style src="style/style.css"></style>
+</head>
+
+
+<body>
+    <select name="service" id="service" class="service">
+        <option>Select a Service</option>   
+        <option value="screen" data-target="devices" id="screen">Screen Replacement</option>       
+        <option value="comp" data-target="comp" id="comp">Computer Work</option> 
+        <option value="misc" data-target="misc" id="misc">Miscellaneous</option>
+</select>
+<div style="display:none" id="service-devices">
+    <select name="devices" id="devices" class="devices">
+    <option>Select a device</option>       
+    <option value="iphone" data-target="iphones" id="iphone">iPhone</option>       
+    <option value="ipad"  data-target="ipads" id="ipad">iPad</option>
+    <option value="android" id="android">Android</option>
+    </select>
+<div style="display:none" id="devices-iphones">
+    <select name="iphone" id="iphone" class="iphone">
+    <!--<option value="iphone6s" id="iphone6s">iPhone 6S</option> -->
+    <!--<option value="iphone6splus" id="iphone6splus">iPhone 6S Plus</option>-->
+    <option></option>
+    <option value="iphone6" id="iphone6">iPhone 6</option>
+    <option value="iphone6plus" id="iphone6plus">iPhone 6 Plus</option>
+    <option value="iphone5s" id="iphone5s">iPhone 5S</option>
+    <option value="iphone5c" id="iphone5c">iPhone 5C</option>
+    <option value="iphone5" id="iphone5">iPhone 5</option>
+    <option value="iphone4s" id="iphone4s">iPhone 4S</option>
+    <option value="iphone4" id="iphone4">iPhone 4</option>
+    </select>
+</div>
+<div style="display:none" id="devices-ipads">
+    <select name="ipad" id="ipad" class="ipad">
+          <option></option>
+    <option value="ipadmini3" id="ipadmini3">iPad Mini 3</option>
+    <option value="ipadmini2" id="ipadmini2">iPad Mini 2</option>
+    <option value="ipadair" id="ipadair">iPad Air</option>
+    <option value="ipad4" id="ipad4">iPad 4</option>
+    <option value="ipad3" id="ipad3">iPad 3</option>
+    <option value="ipadmini" id="ipadmini">iPad Mini</option>
+    <option value="ipad2" id="ipad2">iPad 2</option>
+    </select>
+</div>
+</div>
+<div style="display:none" id="service-comp">
+    <select name="compwork" id="compwork" class="compwork">
+    <option value="desktopcreation" id="desktopcreation">Desktop Creation</option>
+    <option value="desktopbuild" id="desktopbuild">Desktop Build</option>
+    <option value="hardwareupgrades" id="hardwareupgrades">Hardware Upgrades</option>
+    <option value="datarecovery" id="datarecovery">Data Recovery/Transfer</option>
+    <option value="spywareremoval" id="spywareremoval">Spyware/Adware Removal</option>
+    <option value="virusremoval" id="virusremoval">Virus Removal</option>
+    </select>
+</div>
+<div style="display:none" id="service-misc">
+    <select name="miscellaneous" id="miscellaneous" class="miscellaneous">   
+    <option value="networksecurity" id="networksecurity">Network Security</option> 
+    <!--<option value="webdesign" id="webdesign">Website Design</option>-->
+    </select>
+</div>
+</body>
+</html>
