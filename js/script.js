@@ -58,7 +58,7 @@ $(document).ready(function(){
             $("body").append(option2);
 
         }
-        else{
+        if (incr != 1 && incr !=0){  // because fuck you
             // todo: put at a random place
             var option1 = $("<option/>", {"class":'option'+incr, "text":"Pick a Thing" });
             $("body").append(option1);  
