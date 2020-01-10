@@ -1,29 +1,28 @@
 $(document).ready(function(){
     var incr=0;
 
-    $('select').on('change', function() {
-        var target=$(this).find(":selected").attr("data-target");
-        var id=$(this).attr("id");
-        $("div[id^='"+id+"']").hide();
-        $("#"+id+"-"+target).show();
+    function addDropdown(){
+        //var target=$(this).find(":selected").attr("data-target");
+        //var id=$(this).attr("id");
+        //$("div[id^='"+id+"']").hide();
+        //$("#"+id+"-"+target).show();
 
-        var name = $("<div/>",{"text":'imamoron',"test":"name","class":"test"
-});
-        //$("body").append(name);   
+        var name = $("<div/>",{"text":'imamoron',"test":"name","class":"test"});
 
         var select = $("<select/>", {"name":"customname" , "class":"custom"+incr});
-        var option = $("<option/>", {"class":'option'+incr, "text":"testtext"+incr});
-        
-        $("body").append(option);   
+        var option1 = $("<option/>", {"class":'option'+incr, "text":"testtext"+incr});
+        $("body").append(option1);  
 
-        $('.option'+incr).wrap(select)
+        var option2 = $("<option/>", {"class":'option'+incr, "text":"11testtext"+incr});
+        $("body").append(option2);
+
+        $('.option'+incr).wrapAll(select)
         $(".custom"+incr).wrap("<div class='cool'> </div>")
         
-
-
-        var new_dd=""
         $("body").append("TEST");   
         incr++;
-    });
+    }
+
+    $(document).on('change', addDropdown);
     
 });
